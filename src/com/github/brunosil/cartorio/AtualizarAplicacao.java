@@ -15,8 +15,5 @@ public class AtualizarAplicacao {
       daoTabeliao.saveOrUpdate(tabeliao);
       System.out.println("====Entidade atualizada com sucesso====");
       
-      
-        
-    }
-    
+   } 
 }

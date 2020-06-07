@@ -22,9 +22,7 @@ public class BuscarAplicacao {
        System.out.println("");
        
        System.out.println("====Buscar Entidade Tipo Tabeliao====");
-       System.out.println("ID: " + tipoTabeliao.getId());
-       
+       System.out.println("ID: " + tipoTabeliao.getId()); 
         
-    }
-    
+    } 
 }

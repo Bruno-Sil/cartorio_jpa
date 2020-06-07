@@ -1,15 +1,10 @@
 package com.github.brunosil.cartorio.entidade;
 
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -18,9 +13,8 @@ public class TipoTabeliao implements EntidadeBase{
 
     private Long id;
     private String nome;
-    private TipoTabeliao tipo;
-
-
+    private Tabeliao   tipo;
+    
     /**
      *
      * @return
@@ -46,14 +40,13 @@ public class TipoTabeliao implements EntidadeBase{
         this.id = id;
     }
 
-    public TipoTabeliao getTipo() {
+    public Tabeliao getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoTabeliao tipo) {
+    public void setTipo(Tabeliao tipo) {
         this.tipo = tipo;
     }
-    
 
     @Override
     public int hashCode() {

@@ -26,7 +26,8 @@ public class InserirAplicacao {
        
        System.out.println("=====Inserir Dados da Entidade TipoTabeliao======");
        tipotabeliao.setNome("Lucas Emanuel");
-       tipotabeliao.setTipo(tipotabeliao);
+       tipotabeliao.setTipo(tabeliao);
+       
        
        daoTabeliao.saveOrUpdate(tabeliao);
        daoTipoTabeliao.saveOrUpdate(tipotabeliao);

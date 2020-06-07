@@ -65,9 +65,9 @@ public class Tabeliao implements EntidadeBase {
         this.cpf = cpf;
     }
     
-    @OneToOne(mappedBy = "tb_tipotabeliao", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "tb_tipotabeliao")
-     public TipoTabeliao getTipo() {
+    @OneToOne(mappedBy = "tipo", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "tipo")
+      public TipoTabeliao getTipo() {
         return tipo;
     }
 
@@ -81,7 +81,6 @@ public class Tabeliao implements EntidadeBase {
         hash += (id != null ? id.hashCode() : 0); // Faz busca e organização dos elementos do objeto.
         return hash;
     }
-
     
     @Override
     public boolean equals(Object object) {
